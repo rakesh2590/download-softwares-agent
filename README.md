@@ -10,10 +10,10 @@ An agent that finds the latest version of each software in `requiredsoftwares.cs
 
 ## Setup
 
+Install [uv](https://docs.astral.sh/uv/), then run:
+
 ```bash
-python -m venv .venv
-source .venv/Scripts/activate
-pip install -r requirements.txt
+uv sync
 cp .env.example .env
 ```
 
@@ -35,7 +35,7 @@ Rows with a blank `name` are skipped. A blank `version` means the latest stable 
 ## Run
 
 ```bash
-python download_softwares.py
+uv run python download_softwares.py
 ```
 
 Each PowerShell command the agent wants to run is printed and waits for `y` or `n`. Read it before you approve. Installers are downloaded to `downloads/` and are not committed to Git.

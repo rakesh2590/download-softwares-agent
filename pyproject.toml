@@ -1,0 +1,10 @@
+[project]
+name = "download-softwares-agent"
+version = "0.1.0"
+description = "Finds, downloads, and installs the software listed in requiredsoftwares.csv"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "claude-agent-sdk==0.2.163",
+    "python-dotenv==1.2.4",
+]
