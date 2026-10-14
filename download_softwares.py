@@ -140,7 +140,7 @@ async def ask_human(tool_name, tool_input, context):
     answer = input("Allow this command? (y/n): ").strip().lower()
     if answer == "y":
         return PermissionResultAllow()
-    return PermissionResultDeny(message="Denied by user. Stop this step.", interrupt=True)
+    return PermissionResultDeny(message="Denied by user. Stop this step.")
 
 
 async def run_agent(prompt: str, options, fallback: str) -> str:
