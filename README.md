@@ -6,7 +6,7 @@ An agent that finds the latest version of each software in `requiredsoftwares.cs
 
 - Windows
 - Python 3.14
-- An Anthropic API key
+- An Anthropic API key Required
 
 ## Setup
 
